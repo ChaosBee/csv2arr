@@ -1,4 +1,4 @@
-# csv2arr
+# csv2arr(es6 version)
 Introduction: A simple javascript lib to import csv file and translate it to 2D array.It can automatic detect the file encoding,such as UTF8,GBK(GB2312),BIG-5 and so on.
 
 介绍：简单实用的Javascript库，用于导入**CSV文件转换成二维数组**。可以**自动识别文件编码**，如UTF8、GBK(GB2312)、BIG-5等等。
@@ -16,10 +16,4 @@ Download the packege and open the demo.html to see how to use,wish you like it.
 打包下载，打开demo.html看看使用示范，希望你喜欢^_^
 
 ###simple demo 简单示例
-```
-$("input[name=csvfile]").change(function(){
-	$(this).csv2arr(function( arr ){
-		console.log( arr );
-	}
-});
-```
+
