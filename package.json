@@ -1,0 +1,44 @@
+{
+  "name": "csv2arr",
+  "version": "1.0.0",
+  "description": "decode csv to arr",
+  "main": "index.js",
+  "dependencies": {
+    "jschardet": "^1.6.0",
+    "papaparse": "^4.4.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-es2015": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "rollup": "^0.58.2",
+    "rollup-plugin-babel": "^3.0.4"
+  },
+  "scripts": {
+    "build": "npm run test && rollup -c",
+    "test": "eslint index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChaosBee/csv2arr.git"
+  },
+  "keywords": [
+    "csv",
+    "encode",
+    "array",
+    "gbk",
+    "utf8"
+  ],
+  "author": "Jabbar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ChaosBee/csv2arr/issues"
+  },
+  "homepage": "https://github.com/ChaosBee/csv2arr#readme"
+}
