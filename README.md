@@ -9,7 +9,7 @@ Compatibility: IE10+,Chrome,Safari,firefox,and fast mode in Chinese browers.IE9 
 
 Dependence: To use this lib,you should import some other js lib,include jquery, papaparse.js and jschardet.js,which is include in the ./lib directory.If you customer use IE9 or less,you should import base64.js and it's in the ./lib too.
 
-库依赖：**jquery**.js、**PapaParse**.js、**jschardet**.js，这三个库都在./lib目录下有备份，方便使用。
+库依赖：**jquery**.js、**PapaParse**.js、**jschardet**.js
 
 Download the packege and open the demo.html to see how to use,wish you like it.
 
