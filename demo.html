@@ -7,24 +7,22 @@
 
 <a href="./test.csv" >点击下载示例csv</a><br /><br /><br />
 
-<input type="file" name="csvfile" />
-<input type="button" onclick="csv()" value="JS转换"/>
+<input type="file" name="csvfile"/>
+<input type="button" onclick="fileUpdate()" value="JS转换"/> 
 
 <br /><br /><br />
 <div id="resTbl"></div>
 
-<script src="./lib/jquery.js"></script>
-<script src="./lib/papaparse.js"></script>
-<script src="./lib/jschardet.js"></script>
-<!--[if lte IE 9]>
-	<script src="./lib/base64.js"></script>
-<![endif]-->
-
-<script src="csv2arr.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="build/csv2arr.js"></script>
 <script>
 
-function csv(){
-	$("input[name=csvfile]").csv2arr(function(arr){
+// $("input[name=csvfile]").on('change', fileUpdate)
+
+function fileUpdate(e) {
+	const file = $("input[name=csvfile]")[0].files[0]
+	console.log(file)
+	csv2arr(file).then(function(arr){
 		console.log( arr );
 		//something to do here
 		var tblStr = "<table border='1'>";
@@ -36,6 +34,8 @@ function csv(){
 			tblStr += "</tr>";
 		});
 		$("#resTbl").html( tblStr );
+	}, function (e) {
+		console.log(e)
 	});
 }
 </script>
