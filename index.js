@@ -35,6 +35,7 @@ export default function (file) {
       var data = e.target.result
       var encoding = checkEncoding(data)
       Papa.parse(file, {
+        trimHeader: false,
         encoding: encoding,
         complete: function (results) {
           // UTF8 \r\n与\n混用时有可能会出问题
